@@ -40,5 +40,8 @@ close;
 
 run("Invert", "stack");
 
+# Saving Files as Tiff sequence and AVI movie
+
 saveAs("Tiff", "./Processed_Data/Denoised_Rrescaled.tif");
 
+run("AVI... ", "compression=PNG frame=7 save=[./Processed_Data/Denoised_Rrescaled_Movie.avi]");
