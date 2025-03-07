@@ -1,7 +1,7 @@
 # ImageJ Macro to Standardize vEM data
 
-inputDir = getDirectory("Choose Input Folder");
-outputDir = getDirectory("Choose Output Folder");
+inputDir = getDirectory("/Users/samaksh/Desktop/NUS_Work/EMU/Anne Beghin - 20250213 - Dish C - vEM - Sample 1 - Montage Data");
+outputDir = getDirectory("/Users/samaksh/Desktop/NUS_Work/EMU/Anne Beghin - 20250213 - Dish C - vEM - Sample 1 - Montage Data/cropped/");
 
 list = getFileList(inputDir);
 for (i = 0; i < list.length; i++) {
