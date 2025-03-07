@@ -38,3 +38,7 @@ pixel_width=1.0000 pixel_height=1.0000 voxel_depth=3");
 run("Orthogonal Views");
 close;
 
+run("Invert", "stack");
+
+saveAs("Tiff", "./Processed_Data/Denoised_Rrescaled.tif");
+
