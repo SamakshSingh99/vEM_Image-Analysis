@@ -1,0 +1,13 @@
+# ImageJ Macro to Standardize vEM data
+
+inputDir = getDirectory("Choose Input Folder");
+outputDir = getDirectory("Choose Output Folder");
+
+list = getFileList(inputDir);
+for (i = 0; i < list.length; i++) {
+    open(inputDir + list[i]);
+    makeRectangle(100, 50, 4000, 3000);  // Adjust cropping coordinates as needed
+    run("Crop");
+    saveAs("Jpeg", outputDir + list[i]); // Save in the chosen output folder
+    close();
+}
